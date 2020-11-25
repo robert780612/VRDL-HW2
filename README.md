@@ -9,19 +9,26 @@ The following specs were used to create the original solution.
 
 ## Reproducing Submission
 To reproduct my submission, do the following steps:
-1. [Installation](#installation)
+1. [Requirement](#requirement)
 2. [Dataset Preparation](#dataset-preparation)
 2. [Training](#training)
 3. [Inference](#inference)
 4. [Make Submission](#make-submission)
 
-## Installation
-All requirements should be detailed in requirements.txt. Using Anaconda is strongly recommended.
-```
-conda create -n vrdlhw1 python=3.6
-source activate vrdlhw1
-pip install -r requirements.txt
-```
+## Requirement
+The requirements are listed as below
+- Python >= 3.6
+- numpy
+- tqdm
+- torch
+- torchvision
+- tensorboard
+- h5py
+- pandas 
+- matplotlib
+- cv2
+- pillow
+- detectron2
 
 ## Dataset Preparation
 All required files except images are already in data directory.
@@ -72,5 +79,6 @@ $ kaggle competitions submit -c cs-t0828-2020-hw1 -f predictions.csv -m "Message
 ```
 
 ## Reference
-This repository is folked from [WS-DAN.PyTorch](https://github.com/GuYuc/WS-DAN.PyTorch)
+This repository is based on [Detectron2](https://github.com/facebookresearch/detectron2)
+
 

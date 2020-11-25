@@ -41,25 +41,20 @@ python data_preprocess.py
 ```
 
 ## Configuration
-Set the configuration in the *config.py* (Model config, Dataset config...). You can find the detail explaination in this [website](https://detectron2.readthedocs.io/modules/config.html#config-references)
+Set the configuration in the *config.py* (Model config, Dataset config...). You can find the detail explaination in this [website](https://detectron2.readthedocs.io/modules/config.html#config-references).
 
 ## Training
-To train models, run following commands.
+To train models, run following commands. All training log and trained model are saved in "output" directory.
 ```
 $ python train.py
 ```
 
-The expected training times are:
-
-Model | GPUs | Image size | Training Epochs | Training Time
------------- | ------------- | ------------- | ------------- | -------------
-inception-v3 | 1x 1080ti | 224 | 16 | 6 hours
-
 ## Inference
-If trained weights are prepared, you can create files that contains class probabilities of images.
+If trained weights are prepared, you can run the following command to generate json file which contains predicted results.
 ```
 $ python eval.py
 ```
+And if you set '''visualize = False''' as '''True'''
 
 ## Make Submission
 Following command will ensemble of all models and make submissions.

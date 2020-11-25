@@ -1,6 +1,9 @@
 # VRDL-HW2
 Code for Selected Topics in Visual Recognition using Deep Learning Homework 2
 
+## Briefly Introduction
+This repository implements a SVHN digit detector. I used [RetinaNet](https://arxiv.org/abs/1708.02002) with [Resnet50](https://arxiv.org/abs/1512.03385) backbone. It achieves mAP 0.4214 and requires only 50 ms inference time per image.
+
 ## Hardware
 The following specs were used to create the original solution.
 - Ubuntu 16.04 LTS
@@ -54,14 +57,8 @@ If trained weights are prepared, you can run the following command to generate j
 ```
 $ python eval.py
 ```
-And if you set '''visualize = False''' as '''True'''
-
-## Make Submission
-Following command will ensemble of all models and make submissions.
-```
-$ kaggle competitions submit -c cs-t0828-2020-hw1 -f predictions.csv -m "Message"
-```
-
+And if you set ```visualize = False``` to ```True```. It will plot predicted box on the image and save it.
+The final detection performance on the SVHN test dataset is mAP 0.42140.
 ## Reference
 This repository is based on [Detectron2](https://github.com/facebookresearch/detectron2)
 

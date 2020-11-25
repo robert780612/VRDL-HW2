@@ -61,5 +61,5 @@ And if you set ```visualize = False``` to ```True```. It will plot predicted box
 The final detection performance on the SVHN test dataset is mAP 0.42140.
 ## Reference
 - This repository is based on [Detectron2](https://github.com/facebookresearch/detectron2).++
-The code for parsing mat file is modified from [pavitrakumar78](https://github.com/pavitrakumar78/Street-View-House-Numbers-SVHN-Detection-and-Classification-using-CNN/blob/master/construct_datasets.py)
+- The code for parsing mat file is modified from [pavitrakumar78](https://github.com/pavitrakumar78/Street-View-House-Numbers-SVHN-Detection-and-Classification-using-CNN/blob/master/construct_datasets.py)
 

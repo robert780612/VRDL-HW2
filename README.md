@@ -14,9 +14,9 @@ The following specs were used to create the original solution.
 To reproduct my submission, do the following steps:
 1. [Requirement](#requirement)
 2. [Dataset Preparation](#dataset-preparation)
-2. [Training](#training)
-3. [Inference](#inference)
-4. [Make Submission](#make-submission)
+3. [Configuration](#configuration)
+4. [Training](#training)
+5. [Inference](#inference)
 
 ## Requirement
 The requirements are listed as below

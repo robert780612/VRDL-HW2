@@ -53,12 +53,12 @@ $ python train.py
 ```
 
 ## Inference
-If trained weights are prepared, you can run the following command to generate json file which contains predicted results.
+If trained weights are prepared, you can run the following command to generate json file which contains predicted results. The final detection performance on the SVHN test dataset is mAP 0.42140.
 ```
 $ python eval.py
 ```
 And if you set ```visualize = False``` to ```True```. It will plot predicted box on the image and save it.
-The final detection performance on the SVHN test dataset is mAP 0.42140.
+
 ## Reference
 - This repository is based on [Detectron2](https://github.com/facebookresearch/detectron2).
 - The code for parsing mat file is modified from [pavitrakumar78](https://github.com/pavitrakumar78/Street-View-House-Numbers-SVHN-Detection-and-Classification-using-CNN/blob/master/construct_datasets.py)

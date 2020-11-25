@@ -31,28 +31,17 @@ The requirements are listed as below
 - detectron2
 
 ## Dataset Preparation
-All required files except images are already in data directory.
-If you generate CSV files (duplicate image list, split, leak.. ), original files are overwritten. The contents will be changed, but It's not a problem.
-
 ### Download Official Image
-Download and extract *training_data*, *testing_data*, and *training_labels.csv*.
-If the Kaggle API is installed, run following command.
-```
-$ kaggle competitions download -c cs-t0828-2020-hw1
-```
+Download and extract SVHN dataset
 
 ### Prepare Images
-After downloading and converting images, the data directory is structured as:
+After downloading and converting images, run the following command to convert "digitStruct.mat" file into "train_data_processed.h5" format.
 ```
-root_dir
-  +- training_data
-  +- testing_data
-  +- training_labels.csv
-  +- src
+python data_preprocess.py
 ```
 
 ## Configuration
-Set the configuration in the *config.py* (Model config, Dataset config...)
+Set the configuration in the *config.py* (Model config, Dataset config...). You can find the detail explaination in this [website](https://detectron2.readthedocs.io/modules/config.html#config-references)
 
 ## Training
 To train models, run following commands.
